@@ -49,6 +49,17 @@ The Access Denied page opens in two cases:
 
 Back to Home returns to the login page. Back to Dashboard returns to that role's home page when a session exists.
 
+## Visual layer
+
+`fx.css` and `fx.js` add the 3D and motion effects on top of the app. They are visual only and never touch login, roles or routing.
+
+- Login: rotating 3D role cube, floating role chips, mouse parallax, animated headline
+- Dashboards: 3D tilt cards with light glare, count-up numbers, growing bars, sweeping donut, staggered entrance
+- Cursor spotlight, animated buttons and sidebar, floating lock on Access Denied
+- Respects the reduced-motion setting
+
+To switch it all off, remove the `fx.css` link and the `fx.js` script from `index.html`.
+
 ## Files
 
 - `index.html` — screens
@@ -57,3 +68,4 @@ Back to Home returns to the login page. Back to Dashboard returns to that role's
 - `auth-store.js` — session and permission checks
 - `roles.js` — accounts and role menus
 - `roles.json` — the same role data in JSON
+- `fx.css` / `fx.js` — 3D and motion layer

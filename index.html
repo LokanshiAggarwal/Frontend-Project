@@ -6,6 +6,7 @@
   <title>AccessFlow</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect rx='8' width='32' height='32' fill='%236d4dff'/%3E%3Cpath fill='white' d='M16 7l8 14H8z'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="fx.css">
 </head>
 <body>
   <section id="loginView" class="login-view hidden">
@@ -49,6 +50,16 @@
           <path d="M206 268h108l16 18H190l16-18z" fill="#c9d8f8"/>
           <circle cx="332" cy="214" r="10" fill="#ffd36b"/>
         </svg>
+      </div>
+
+      <div class="fx-stage" aria-hidden="true">
+        <span class="fx-chip c1"><i></i>Admin: full access</span>
+        <span class="fx-chip c2"><i></i>Manager: team and tasks</span>
+        <span class="fx-chip c3"><i></i>User: my work</span>
+        <div class="fx-cube"><div class="fx-cube-in">
+          <div class="fx-face">Admin</div><div class="fx-face">Manager</div><div class="fx-face">User</div>
+          <div class="fx-face">Secure</div><div class="fx-face">Log In</div><div class="fx-face">Flow</div>
+        </div></div>
       </div>
 
       <div class="pills">
@@ -173,9 +184,11 @@
     </form>
   </div>
 
+  <a class="fx-credit" href="https://lokanshiaggarwal.github.io/My-Portfolio" target="_blank" rel="noopener">Designed and built by Lokanshi</a>
   <div id="toast" class="toast" role="status"></div>
   <script src="roles.js"></script>
   <script src="auth-store.js"></script>
   <script src="app.js"></script>
+  <script src="fx.js"></script>
 </body>
 </html>
